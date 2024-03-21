@@ -9,7 +9,7 @@ from logging import FileHandler,WARNING
 app = Flask(__name__, template_folder="template")
 file_handler = FileHandler('errorlog.txt')
 file_handler.setLevel(WARNING)
-MONGODB_URI ="mongodb+srv://tvkrishsoni:6igYEp1sLrgoTLdH@cluster0.o8n9krc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_URI =""
 client = MongoClient(MONGODB_URI)
 db = client['my_database']
 
